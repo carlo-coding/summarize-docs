@@ -1,0 +1,6 @@
+.venv
+.env
+/docs/*
+/ReadAloudFiles/*
+resultado.txt
+resumen.txt
