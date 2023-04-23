@@ -12,7 +12,7 @@ import datetime
 load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
-pytesseract.pytesseract.tesseract_cmd = r"D:\\Programas\\Tesseract-OCR\\tesseract.exe"
+pytesseract.pytesseract.tesseract_cmd = os.getenv("TESSERACT_OCR_EXECUTABLE_PATH")
 
 def get_timestamped_filename(file_extension):
     # Obtener la fecha y hora actual
